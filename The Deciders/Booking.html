@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>HLALANATHI B&B</title>
+
+    <script type="text/javascript">
+      <!--
+          function sayHello(){
+              alert("Your booking was succeful")
+          }
+          //-->
+
+  </script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">HLALANATHI B&B</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Availability</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Policies <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#cancellation">Cancellation Policy</a></li>
+                <li><a href="#terms">Terms,condotions and privacy policy</a></li>
+               
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+        
+      
+    
+    <div class="book">
+        <form class="book-form">
+            <div class="form-item">
+                <label for="checkin-date">Check In Date: </label>
+                <input type="date" id="checkin-date">
+            </div>
+            <div class="form-item">
+                <label for="checkout-date">Check Out Date: </label>
+                <input type="date" id="checkout-date">
+            </div>
+            <div class="form-item">
+                <label for="adult">Adults: </label>
+                <input type="number" min="1" value="1" id="adult">
+            </div>
+            <div class="form-item">
+                <label for="children">Children: </label>
+                <input type="number" min="1" value="1" id="children">
+            </div>
+            <div class="form-item">
+                <label for="rooms">Rooms: </label>
+                <input type="number" min="1" value="1" id="rooms">
+            </div>
+            <div class="form-item">
+               <!--- <input type="submit" class="btn" onclick="Successful Reserved()" value="Book Now" /> -->
+                <input type="submit" class="btn" onclick="sayHello()" value="Book Now" />
+            </div>
+        </form>
+   </div>
+
+   <div class="cancellation" id="cancellation">
+    <h3>Cancellation policy</h3>
+    <p>If the booking is cancelled within 7 days prior to the arrival date, 100% Cancellation fees applies
+        If the booking is cancelled on the same day, 100% Cancellation fees applies
+        This also applies for a “No Show”.</p>
+  </div>
+
+  <div class="terms" id="terms">
+    <h3>Terms,condotions and privacy policy</h3>
+    <p>Non-smoking property 
+      Strictly no parties 
+      Respect our neighbours and keep noise to a minimum between 10pm and 8am. <br>
+      Ensure dishes are washed and garbage is put outside in the bins on departure. <br>
+      Pets are only allowed in properties clearly advertised as “pet-friendly” or based on prior permission from BNB Made Easy. </p>
+  </div>
+
+  <section class="butt" id="butt">
+    <button type="button" class="btn"><a href="index.html" style="text-decoration: none;">HOME</a></button>
+
+  </section>
+
+
+</body>
+</html>
